@@ -2,50 +2,49 @@ import React, { Component } from 'react';
 import './app.css';
 import BannerImage from './media/banner-right-image.png';
 import SearchAddress from './media/search-address.png';
+import Vote from './media/vote.png';
 
 
 export default () => {
 
     return (
-        <div>
-            <div class="main-banner" id="top" style={{ paddingLeft: "50", paddingRight: "50", marginTop: "0%"}}>
-                <div class="container">
-                <div class="row">
-                    <div class="col-lg-12" style={{display: "flex"}}>
-                    <div class="row" style={{ display: "flex", flexDirection: "row", marginLeft: "10%", marginRight: '10%'}}>
-                        <div class="col-lg-6 align-self-center" style={{width: "60%", padding: "2%", alignContent: "center"}}>
+        <div styles={{display: "flex"}}>
+            <div class="main-banner" id="top" style={{ display: "flex", paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginLeft: '10%', marginRight: '10%'}}>
+                {/* <div class="container"> */}
+
+                <div style={{display: "flex",flexDirection: "row"}}>
+                    <div style={{width: "50%", padding: "2%"}}>
                         <div class="left-content header-text">
-                            <h2>Search your <em>voting location </em> &amp; track <span>wait times</span></h2>
-                            <p>Vote Tracker is a Minnesota service that allows you to see approximate waiting times at your voting location in real time, helping you plan your trip to the polls.</p>
+                            <h2>Search your <em>voting location </em> to track <span>wait times</span></h2>
+                            <p>Vote Tracker is a Minnesota service that allows you to view approximate waiting times at your voting location in real time, helping you plan your trip to the polls.</p>
                             <h6><a rel="nofollow" href="https://pollfinder.sos.state.mn.us/" target="_blank">Find your voting address</a></h6>
                             <form id="search" action="#" method="GET">
-                            <fieldset>
+                            {/* <fieldset> */}
                                 <input type="address" name="address" class="email" placeholder="Enter your voting location address..." autocomplete="on" required/>
-                            </fieldset>
-                            <fieldset>
-                                <button type="submit" class="main-button">Search</button>
-                            </fieldset>
+                            {/* </fieldset>
+                            <fieldset> */}
+                                <button type="submit" class="main-button"><b>Search</b></button>
+                            {/* </fieldset> */}
                             </form>
                         </div>
-                        </div>
-                        <div class="col-lg-6" style={{width: "60%", padding: "2%", alignContent: "center"}}>
-                        <div class="right-image ">
-                            <img src={BannerImage} alt="team meeting"/>
-                        </div>
-                        </div>
                     </div>
+                    <div style={{width: "50%", padding: "2%"}}>
+                    {/* <div> */}
+                        <img src={Vote} alt="team meeting" style={{borderRadius: "40px"}}/>
+                    {/* </div> */}
                     </div>
                 </div>
-                </div>
+                {/* </div> */}
             </div>
 
-            <div id="services" class="our-services section">
+            <div id="services" class="our-services section" style={{display: "flex", flexDirection: "row", marginLeft: "10%", marginRight: '10%', paddingLeft: "50", paddingRight: "50", marginTop: "0%"}}>
                 <div class="container">
                 <div class="row">
-                    <div class="col-lg-12  ">
+                    <div class="col-lg-12">
                     <div class="section-heading">
                         <h2>The waiting time at <em>333 EAST RIVER PKWY</em> is approximately <span>35 minutes</span></h2>
-                        <p>Space Dynamic HTML5 template is free to use for your website projects. However, you are not permitted to redistribute the template ZIP file on any CSS template collection websites. Please contact us for more information. Thank you for your kind cooperation.</p>
+                        <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
+                        
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
@@ -62,10 +61,10 @@ export default () => {
                 </div>
             </div>
 
-            <div id="portfolio" class="our-portfolio section">
-                <div class="container" style={{backgroundColor: '#E5E4EC', borderRadius: '40px', padding: '40px'}}>
+            <div id="portfolio" class="our-portfolio section" style={{ paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginBottom: "10%", marginLeft: "20%", marginRight: "20%"}}>
+                <div class="container" style={{backgroundColor: '#FAFAFA', borderRadius: '40px', padding: '40px'}}>
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
+                    <div class="col-lg-8 offset-lg-2" style={{ display: "flex", flexDirection: "row", marginLeft: "10%", marginRight: '10%'}}>
                     <div class="section-heading ">
                         <h2>Instructions<br/><em>Voting Information </em></h2>
                         <h4>1. Find your voting/polling location</h4>

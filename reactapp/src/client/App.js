@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './app.css';
 import './animate.css';
 import Header from './Header';
@@ -24,19 +24,41 @@ export default class App extends Component {
   render() {
     const { username } = this.state;
     return (
-      <div>
+      <WebApp />
+      // // <div>
 
         
-        {/* <p>helloooooooooooooooooo</p>
-        {username ? <h1>{`Hello ${username} uwu`}</h1> : <h1>Loading.. please wait!</h1>} */}
-        <Header></Header>
-        <AboutPage></AboutPage>
-        <Main></Main>
-        {/* <Contact></Contact> */}
-        <Footer></Footer>
-      </div>
+      //   {/* <p>helloooooooooooooooooo</p>
+      //   {username ? <h1>{`Hello ${username} uwu`}</h1> : <h1>Loading.. please wait!</h1>} */}
+      //   {/* <Header></Header>
+      //   <AboutPage></AboutPage>
+      //   <Main></Main> */}
+      //   {/* <Contact></Contact> */}
+      //   {/* <Footer></Footer> */}
+      // // </div>
     );
   }
 }
 
+const WebApp = () => {
 
+  const [tab, setTab] = useState(0);
+
+  const switchTab = (newTab) => {
+    setTab(newTab);
+  }
+
+  return (
+      <div>
+
+          
+      {/* <p>helloooooooooooooooooo</p>
+      {username ? <h1>{`Hello ${username} uwu`}</h1> : <h1>Loading.. please wait!</h1>} */}
+      <Header changeTab={switchTab} currentTab={tab} />
+      {tab == 1 && <AboutPage />}
+      {tab == 0 && <Main />}
+      {/* <Contact></Contact> */}
+      <Footer></Footer>
+    </div>
+  );
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 
 
-export default () => {
+export default ({ changeTab, currentTab }) => {
 
     return (
         <div>
@@ -17,10 +17,10 @@ export default () => {
                         </a>
                         
                         <ul class="nav" style={{position: "absolute", right: "0", marginRight: "15%"}}>
-                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                        <li class="scroll-to-section"><a href="#portfolio">Instructions</a></li>
-                        <li class="scroll-to-section"><a href="about.html">About Us</a></li>
-                        <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
+                        <li class="scroll-to-section"><a href="#" class={currentTab == 0 && "active"} onClick={() => changeTab(0)}>Home</a></li>
+                        {/* <li class="scroll-to-section"><a href="#portfolio">Instructions</a></li> */}
+                        <li class="scroll-to-section"><a href="#" class={currentTab == 1 && "active"} onClick={() => changeTab(1)}>About Us</a></li>
+                        <li class="scroll-to-section"><div class="main-red-button"><a href="#portfolio">Instructions</a></div></li> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
