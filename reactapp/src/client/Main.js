@@ -82,8 +82,8 @@ export default () => {
                 <div style={{display: "flex",flexDirection: "row"}}>
                     <div style={{width: "50%", padding: "2%"}}>
                         <div class="left-content header-text">
-                            <h2>Track <em>wait times </em> at your <span>polling location</span></h2>
-                            <p>TIME2VOTE is an application which provides Minnesota residents with real-time updates and information on polling location wait times.</p><br/><p>TIME2VOTE aims to increase and encourage voter participation in elections by helping voters plan when it’s time to make the trip to the polls. Using computer vision to determine current poll traffic, TIME2VOTE enables voters to plan more effectively on Election Day, empowering them to use their voice and VOTE.</p>
+                            <h2>Track <span>wait times </span> at your <em>polling location</em></h2>
+                            <p>TIME2VOTE is an application which provides Minnesota voters with real-time updates and information on polling location wait times.</p><br/><p>TIME2VOTE aims to increase and encourage voter participation in elections by helping voters plan when it’s time to make the trip to the polls. Using computer vision to determine current poll traffic, TIME2VOTE enables voters to plan more effectively on Election Day, empowering them to use their voice and VOTE.</p>
 
                             
                             
@@ -138,7 +138,7 @@ export default () => {
                     <div class="section-heading">
 
                         {/* <h2>The waiting time at your polling location <em>{message}</em> is approximately {<span>{Data.estimatedTime}</span>}<span> minutes</span></h2> */}
-                        <h2>The waiting time at your polling location <em>{message}</em> is approximately {<span>{timeLive}</span>}<span> minutes</span></h2>
+                        <h2>The waiting time at your polling location <span>{message}</span> is approximately {<em>{timeLive}</em>} minutes</h2>
 
 
                         <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
