@@ -13,7 +13,7 @@ export default ({ changeTab, currentTab }) => {
                     <nav class="main-nav" style={{flexDirection: "row", marginLeft: "15%", marginRight: "15%"}}>
                         
                         <a href="index.html" class="logo" style={{textAlign: 'left'}}>
-                        <h4>Vote<span>Tracker</span></h4>
+                        <h4>TIME<span style={{color: "#000000"}}>2</span><span>VOTE</span></h4>
                         </a>
                         
                         <ul class="nav" style={{position: "absolute", right: "0", marginRight: "15%"}}>

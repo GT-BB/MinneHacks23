@@ -38,7 +38,9 @@ export default () => {
                     <div style={{width: "50%", padding: "2%"}}>
                         <div class="left-content header-text">
                             <h2>Track the <em>wait times </em> at your <span>polling location</span></h2>
-                            <p>Vote Tracker is a Minnesota service that allows you to view approximate waiting times at your voting location in real time, helping you plan your trip to the polls.</p>
+                            <p>TIME2VOTE is an application which provides Minnesota residents with real-time updates and information on polling location wait times.</p><br/><p>TIME2VOTE aims to increase and encourage voter participation in elections by helping voters plan when it’s time to vote and make the trip to the polls. Using computer vision to determine current poll traffic, TIME2VOTE enables voters to plan more effectively on Election Day, empowering them to use their voice and VOTE.</p>
+
+                            
                             
                             {/* <div className = 'app'>
                                 { 
@@ -50,7 +52,7 @@ export default () => {
                             
                             
                             
-                            <h6><a rel="nofollow" href="https://pollfinder.sos.state.mn.us/" target="_blank">Find your voting address</a></h6>
+                            <h6><a rel="nofollow" href="https://pollfinder.sos.state.mn.us/" target="_blank">Find your polling location</a></h6>
                             <form onSubmit={handleSubmit}>
                                 <input
                                 type="text"
@@ -108,7 +110,7 @@ export default () => {
                 </div>
             </div>
 
-            <div id="portfolio" class="our-portfolio section" style={{ paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginBottom: "10%", marginLeft: "20%", marginRight: "20%"}}>
+            <div id="portfolio" class="our-portfolio section" style={{ paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginBottom: "0%", marginLeft: "20%", marginRight: "20%"}}>
                 <div class="container" style={{backgroundColor: '#FAFAFA', borderRadius: '40px', padding: '40px'}}>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2" style={{ display: "flex", flexDirection: "row", marginLeft: "10%", marginRight: '10%'}}>
@@ -129,10 +131,14 @@ export default () => {
                         <p>What to bring: <a href="https://www.sos.state.mn.us/elections-voting/election-day-voting/do-i-need-to-bring-id/" target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/do-i-need-to-bring-id/</a></p>
                         
                         
+                        
                     </div>
                     </div>
                 </div>
                 </div>
+            </div>
+            <div style={{textAlign: 'center', paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginBottom: "0%", marginLeft: "20%", marginRight: "20%"}}>
+                <h2 style={{fontSize: "96px", color: "#8ddbff"}}>T<span style={{color: "#000000"}}>2</span><span style={{color: "#fb8888"}}>V</span></h2>
             </div>
         </div>
     )

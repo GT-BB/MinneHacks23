@@ -11,8 +11,8 @@ export default () => {
                 <div class="row">
                     <div class="col-lg-12" style={{display: "flex", flexDirection: "row", textAlign: 'center', marginLeft: "15%", marginRight: "15%", justifyContent: 'center'}}>
                     <p style={{backgroundColor: '#f7f7f7'}}>Made by: Raey, Samyukta, Grace, and Rikhil
-                        <br/>Team billBoard, Georgia Tech
-                        <br/>MinneHacks 2023</p>
+                        <br/>Team GT bB, Georgia Tech bubbleBees
+                        <br/>MinneHack 2023</p>
                     </div>
                 </div>
                 </div>
