@@ -15,18 +15,12 @@ export default () => {
                   <div style={{ display: "flex", flexDirection: "row", marginLeft: "10%", marginRight: '10%'}}>
                     <div style={{width: "50%", padding: "2%"}}>
                       <div class="section-heading">
-                        <h2>Team <em>billBoard</em></h2><br/>
-                        <p>We are just a group of friends who wanted to have our HackGT project be one with an impact. We will tell you with first hand experience that the
-                            floor of Georgia Tech's Klaus building is more comfortable than any bed ever (/s).</p><br/>
+                        <h2>Team <em>____</em></h2><br/>
+                        <p>We're a team of first year engineering students from Georgia Tech focused on improving civic engagement and participation in Minnesota and the nation as a whole.</p><br/>
                 
-                          <p>From the beginning, our team was driven to create an application to improve the quality of life and accessibility of daily services. After researching issues 
-                            experienced by vulnerable populations and minority groups in healthcare and medicine, we came to the realization that medical bill transparency is a major issue 
-                            across the United States.</p><br/>
+                          <p>Our team was driven to create an application to improve the accessibility of voting and facilitate voting in local, state, and national elections through providing everyday citizens with real-time updates and infromation on polling site wait times.</p><br/>
                 
-                          <p>billBoard creates a more equitable healthcare system, one bill at a time. billBoard increases transparency in medical costs by collecting and comparing data on the
-                            most common medical procedures and their average pricing in different states across the country. The billBoard platform features data collection, analysis and verification, 
-                            and comparison of medical bill data, contributed by our diverse user community. By analyzing and presenting this data, billBoard can be used to help users better understand 
-                            their expected medical bill costs.</p><br/>
+                          <p>Using computer vision and React.js, ____ enables voters to plan ahead more effectively and ensure that they are able to exercise their civic power and fulfill their civic responsibilities.</p><br/>
                       </div>
                     </div>
                     <div style={{width: "50%", padding: "2%"}}>
