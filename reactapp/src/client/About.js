@@ -15,6 +15,7 @@ export default () => {
                   <div style={{ display: "flex", flexDirection: "row", marginLeft: "10%", marginRight: '10%'}}>
                     <div style={{width: "50%", padding: "2%"}}>
                       <div class="section-heading">
+<<<<<<< HEAD
                         <h2>Team <em>billBoard</em></h2><br/>
                         <p>We are just a group of friends who wanted to have our MinneHack project be one with an impact. We will tell you with first hand experience that the upper floors of Coffman Union are the best place to grind out some code.</p><br/>
                 
@@ -34,6 +35,14 @@ export default () => {
                             Team billBoard is made up of four engineering students who attend the Georgia Institute of Technology, and three of the members are proud to call Minnesota their home.
                             
                             </p><br/>
+=======
+                        <h2>Team <em>____</em></h2><br/>
+                        <p>We're a team of first year engineering students from Georgia Tech focused on improving civic engagement and participation in Minnesota and the nation as a whole.</p><br/>
+                
+                          <p>Our team was driven to create an application to improve the accessibility of voting and facilitate voting in local, state, and national elections through providing everyday citizens with real-time updates and infromation on polling site wait times.</p><br/>
+                
+                          <p>Using computer vision and React.js, ____ enables voters to plan ahead more effectively and ensure that they are able to exercise their civic power and fulfill their civic responsibilities.</p><br/>
+>>>>>>> e064db99b9a4b0695b2ff3f8735660a4a40fbb91
                       </div>
                     </div>
                     <div style={{width: "50%", padding: "2%"}}>
