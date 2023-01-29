@@ -89,7 +89,7 @@ export default () => {
                 <div class="row">
                     <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>The waiting time at <em>{message}</em> is approximately <span>35 minutes</span></h2>
+                        <h2>The waiting time at your polling location <em>{message}</em> is approximately <span>35 minutes</span></h2>
                         <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
                         
                     </div>
