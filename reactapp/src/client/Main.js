@@ -148,8 +148,8 @@ export default () => {
                         <div class="col-lg-12">
                         <div class="first-bar progress-skill-bar">
                             <h4>Approximate Wait Time</h4>
-                            {<span>{Data.estimatedTime} minutes</span>}
-                            <div class="filled-bar" style={{width: Data.estimatedTime}}></div>
+                            {<span>{timeLive} minutes</span>}
+                            <div class="filled-bar" style={{width: "{timeLive}%"}}></div>
                             <div class="full-bar"></div>
                         </div>
                         </div>
