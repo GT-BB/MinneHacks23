@@ -9,13 +9,13 @@ export default () => {
 
     return (
         <div styles={{display: "flex"}}>
-            <div class="main-banner" id="top" style={{ display: "flex", paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginLeft: '10%', marginRight: '10%'}}>
+            <div class="main-banner" id="top" style={{ display: "flex", paddingLeft: "50", paddingRight: "50", marginTop: "0%", marginLeft: '10%', marginRight: '10%', marginBottom: '0'}}>
                 {/* <div class="container"> */}
 
                 <div style={{display: "flex",flexDirection: "row"}}>
                     <div style={{width: "50%", padding: "2%"}}>
                         <div class="left-content header-text">
-                            <h2>Search your <em>voting location </em> to track <span>wait times</span></h2>
+                            <h2>Track the <em>wait times </em> at your <span>polling location</span></h2>
                             <p>Vote Tracker is a Minnesota service that allows you to view approximate waiting times at your voting location in real time, helping you plan your trip to the polls.</p>
                             <h6><a rel="nofollow" href="https://pollfinder.sos.state.mn.us/" target="_blank">Find your voting address</a></h6>
                             <form id="search" action="#" method="GET">
@@ -30,7 +30,7 @@ export default () => {
                     </div>
                     <div style={{width: "50%", padding: "2%"}}>
                     {/* <div> */}
-                        <img src={Vote} alt="team meeting" style={{borderRadius: "40px"}}/>
+                        <img src={Vote} alt="team meeting" style={{borderRadius: "50px"}}/>
                     {/* </div> */}
                     </div>
                 </div>
