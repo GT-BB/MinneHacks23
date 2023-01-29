@@ -82,8 +82,6 @@ def token_required(f):
 """
     Flask-Restx routes
 """
-
-
 @rest_api.route('/api/users/register')
 class Register(Resource):
     """

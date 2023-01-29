@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState, Component, useEffect } from 'react';
 import './app.css';
 import BannerImage from './media/banner-right-image.png';
 import SearchAddress from './media/search-address.png';
@@ -14,6 +14,49 @@ export default () => {
     const [address, setAddress] = useState('');
   
     const [message, setMessage] = useState('');
+
+    const [timeLive, setTimeLive] = useState(0);
+
+    // useEffect(() => {fetch("/api/test").then(res => console.log(JSON.stringify(res)))})
+    // useEffect(() => {
+    //     while (true) {
+    //         setTimeout(() => {
+    //             fetch('/api/test2')
+    //             .then(res => res.json())
+    //             .then(obj => {
+    //                 console.log(JSON.stringify(obj))
+    //                 console.log(obj.estimatedTime)
+    //                 if (obj.estimatedTime != timeLive) {
+    //                     setTimeLive(obj.estimatedTime);
+    //                 }            
+    //             });
+    //         }, 2000)            
+    //     }
+
+
+    // });
+
+    const getData = () => {
+        fetch('/api/test2')
+                .then(res => res.json())
+                .then(obj => {
+                    console.log(JSON.stringify(obj))
+                    console.log(obj.estimatedTime)
+                    if (obj.estimatedTime != timeLive) {
+                        setTimeLive(obj.estimatedTime);
+                    }            
+                });
+    }
+
+    useEffect(() => {
+        const intervalCall = setInterval(() => {
+          getData();
+        }, 2000);
+        return () => {
+          // clean up
+          clearInterval(intervalCall);
+        };
+      }, []);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -94,7 +137,8 @@ export default () => {
                     <div class="col-lg-12">
                     <div class="section-heading">
 
-                        <h2>The waiting time at your polling location <em>{message}</em> is approximately {Data.map(post => (<span>{post.estimatedTime}</span>))}<span> minutes</span></h2>
+                        {/* <h2>The waiting time at your polling location <em>{message}</em> is approximately {<span>{Data.estimatedTime}</span>}<span> minutes</span></h2> */}
+                        <h2>The waiting time at your polling location <em>{message}</em> is approximately {<span>{timeLive}</span>}<span> minutes</span></h2>
 
 
                         <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
@@ -104,8 +148,8 @@ export default () => {
                         <div class="col-lg-12">
                         <div class="first-bar progress-skill-bar">
                             <h4>Approximate Wait Time</h4>
-                            {Data.map(post => (<span>{post.estimatedTime} minutes</span>))}
-                            <div class="filled-bar" style={{width: ((Data.map(post => (post.estimatedTime))))}}></div>
+                            {<span>{Data.estimatedTime} minutes</span>}
+                            <div class="filled-bar" style={{width: Data.estimatedTime}}></div>
                             <div class="full-bar"></div>
                         </div>
                         </div>
