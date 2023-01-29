@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 import './app.css';
 import BannerImage from './media/banner-right-image.png';
 import SearchAddress from './media/search-address.png';
@@ -6,6 +6,28 @@ import Vote from './media/vote.png';
 
 
 export default () => {
+
+    // const [show, setShow] = useState(true);
+
+    const [address, setAddress] = useState('');
+  
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    
+        setMessage(`${address}`);
+        setAddress('');
+        
+      };
+
+      
+    
+      function Dashpage(){
+        return(
+        <h2>{message}</h2>
+        );
+      }
 
     return (
         <div styles={{display: "flex"}}>
@@ -17,14 +39,39 @@ export default () => {
                         <div class="left-content header-text">
                             <h2>Search your <em>voting location </em> to track <span>wait times</span></h2>
                             <p>Vote Tracker is a Minnesota service that allows you to view approximate waiting times at your voting location in real time, helping you plan your trip to the polls.</p>
+                            
+                            {/* <div className = 'app'>
+                                { 
+                                    show?<Homepage/> : <Dashpage/>  
+                                }
+                                <button onClick = {() => setShow(true)}> Home </button>
+                                <button onClick = {() => setShow(false)}> Search</button>
+                                </div> */}
+                            
+                            
+                            
                             <h6><a rel="nofollow" href="https://pollfinder.sos.state.mn.us/" target="_blank">Find your voting address</a></h6>
-                            <form id="search" action="#" method="GET">
-                            {/* <fieldset> */}
-                                <input type="address" name="address" class="email" placeholder="Enter your voting location address..." autocomplete="on" required/>
-                            {/* </fieldset>
-                            <fieldset> */}
-                                <button type="submit" class="main-button"><b>Search</b></button>
-                            {/* </fieldset> */}
+                            <form onSubmit={handleSubmit}>
+                                <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                value={address}
+                                placeholder="Polling Station Address"
+                                onChange={(event) =>
+                                    setAddress(event.target.value)
+                                }
+                                /> 
+                                <br />
+                                <br />
+                        
+                                <br />
+                                <br />
+                        
+                                <button type="submit">Submit</button>
+                        
+                                <br />
+                                <br />
                             </form>
                         </div>
                     </div>
@@ -42,7 +89,7 @@ export default () => {
                 <div class="row">
                     <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>The waiting time at <em>333 EAST RIVER PKWY</em> is approximately <span>35 minutes</span></h2>
+                        <h2>The waiting time at <em>{message}</em> is approximately <span>35 minutes</span></h2>
                         <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
                         
                     </div>
