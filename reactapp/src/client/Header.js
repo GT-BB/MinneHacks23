@@ -20,7 +20,7 @@ export default ({ changeTab, currentTab }) => {
                         <li class="scroll-to-section"><a href="#" class={currentTab == 0 && "active"} onClick={() => changeTab(0)}>Home</a></li>
                         {/* <li class="scroll-to-section"><a href="#portfolio">Instructions</a></li> */}
                         <li class="scroll-to-section"><a href="#" class={currentTab == 1 && "active"} onClick={() => changeTab(1)}>About Us</a></li>
-                        <li class="scroll-to-section"><div class="main-red-button"><a href="#portfolio">Instructions</a></div></li> 
+                        <li class="scroll-to-section"><div class="main-red-button"><a href="index.html#portfolio">Instructions</a></div></li> 
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>

@@ -13,7 +13,8 @@ import ReactImage from './media/react.png';
 
 
 export default class App extends Component {
-  state = { username: null };
+  state = { username: null};
+  
 
   componentDidMount() {
     fetch('/api/getUsername')
