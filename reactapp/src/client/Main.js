@@ -97,9 +97,7 @@ export default () => {
                         <h2>The waiting time at your polling location <em>{message}</em> is approximately {Data.map(post => (<span>{post.estimatedTime}</span>))}<span> minutes</span></h2>
 
 
-                        <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. </p><br/>
-                            
-                            <p>Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
+                        <p>Plan your trip to the polls by confirming your polling location, securing the appropriate documents/identification, and ensuring you can make it to the polls on time. Learn more about your voting rights in Minnesota: <a href='https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/' target="_blank">https://www.sos.state.mn.us/elections-voting/election-day-voting/know-your-rights/</a>.</p>
                         
                     </div>
                     <div class="row">
@@ -107,7 +105,7 @@ export default () => {
                         <div class="first-bar progress-skill-bar">
                             <h4>Approximate Wait Time</h4>
                             {Data.map(post => (<span>{post.estimatedTime} minutes</span>))}
-                            <div class="filled-bar" style={{width: "71%"}}></div>
+                            <div class="filled-bar" style={{width: ((Data.map(post => (post.estimatedTime))))}}></div>
                             <div class="full-bar"></div>
                         </div>
                         </div>

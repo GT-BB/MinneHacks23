@@ -21,7 +21,7 @@ export default () => {
                 
                           <p>From the beginning, our team was driven to create an application to further improve the quality of life and accessibility of daily services, and ultimately increase civic participation in Minnesota and the nation as a whole. </p><br/>
                 
-                          <p>Every fall, hundreds of people line up outside polling locations on Election Day-- just to cast their ballot and have an opportunity to have their voice heard. In light of recent voting laws and restrictions across the United States, espescially in marginalized communities, our team came to the realization that the long and unpredicatable lines at the polls is main reason voters are discouraged from making the trip to the polls.</p><br/>
+                          <p>Every fall, hundreds of people line up outside polling locations on Election Day-- just to cast their ballot and have an opportunity to have their voice heard. In light of recent voting laws and restrictions across the United States, especially in marginalized communities, our team came to the realization that the long and unpredictable lines at the polls is the main reason voters are discouraged from making the trip to the polls.</p><br/>
 
                           <p><b>TIME2VOTE is an application which provides Minnesota residents with real-time updates and information on polling location wait times, facilitating voting in local, state, and national elections.  TIME2VOTE aims to increase and encourage voter participation in elections by helping voters plan when it’s time to vote and make the trip to the polls.</b></p><br/>
 
