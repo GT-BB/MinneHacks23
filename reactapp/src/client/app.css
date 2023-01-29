@@ -1063,24 +1063,23 @@ Services Style
 
 .our-services .progress-skill-bar .full-bar {
   width: 100%;
-  height: 6px;
-  border-radius: 3px;
+  height: 32px;
+  border-radius: 30px;
   background-color: #f7eff1;
   position: relative;
   z-index: 1;
 }
 
 .our-services .progress-skill-bar .filled-bar {
-  background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
-  height: 6px;
-  border-radius: 3px;
-  margin-bottom: -6px;
+  background: linear-gradient(105deg, #8ddbff, #fb8888);
+  height: 32px;
+  border-radius: 30px;
+  margin-bottom: -32px;
   position: relative;
   z-index: 2;
 }
 
-.our-services .first-bar .filled-bar {
+/* .our-services .first-bar .filled-bar {
   width: 71%;
 }
 
@@ -1090,7 +1089,7 @@ Services Style
 
 .our-services .third-bar .filled-bar {
   width: 90%;
-}
+} */
 
 
 /* 

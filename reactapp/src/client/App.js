@@ -50,15 +50,11 @@ const WebApp = () => {
   }
 
   return (
-      <div>
-
-          
-      {/* <p>helloooooooooooooooooo</p>
-      {username ? <h1>{`Hello ${username} uwu`}</h1> : <h1>Loading.. please wait!</h1>} */}
+      <div>        
+      
       <Header changeTab={switchTab} currentTab={tab} />
       {tab == 1 && <AboutPage />}
       {tab == 0 && <Main />}
-      {/* <Contact></Contact> */}
       <Footer></Footer>
     </div>
   );
