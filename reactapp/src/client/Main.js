@@ -83,8 +83,9 @@ export default () => {
                     <div style={{width: "50%", padding: "2%"}}>
                         <div class="left-content header-text">
                             <h2>Track <span>wait times </span> at your <em>polling location</em></h2>
-                            <p>TIME2VOTE is an application which provides Minnesota voters with real-time updates and information on polling location wait times.</p><br/><p>TIME2VOTE aims to increase and encourage voter participation in elections by helping voters plan when it’s time to make the trip to the polls. Using computer vision to determine current poll traffic, TIME2VOTE enables voters to plan more effectively on Election Day, empowering them to use their voice and VOTE.</p>
-
+                            <p>TIME2VOTE provides real-time updates and information on polling location wait times, empowering voters to make the trip to the polls and increase civic engagement one vote at a time.</p><br/><p>TIME2VOTE aims to increase and encourage voter participation in elections by helping voters plan when it’s time to vote. Using computer vision to determine current poll traffic, TIME2VOTE enables voters to plan more effectively on Election Day, empowering them to use their voice and VOTE.</p>
+                            
+                            
                             
                             
                             {/* <div className = 'app'>

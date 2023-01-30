@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './app.css';
+import Logo from './media/logo.png';
 
 
 export default ({ changeTab, currentTab }) => {
